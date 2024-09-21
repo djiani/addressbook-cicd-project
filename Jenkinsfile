@@ -26,11 +26,7 @@ pipeline{
                 sh "mvn package"
             }
         }
-        stage("6. deployment of the app"){
-            steps{
-                sh "sudo mv /var/lib/jenkins/workspace/addressbook_deployment/target/addressbook.war /home/ubuntu/apache-tomcat-9.0.91/webapps"
-            }
-        }
+       
 
     }
     
