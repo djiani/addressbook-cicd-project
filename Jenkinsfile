@@ -50,7 +50,7 @@ pipeline {
        stage('deploy') {
             steps {
                 echo 'This is stage 6'
-                sh 'sudo mv /var/lib/jenkins/workspace/mypipilinefromscm/target/*.war  /opt/apache-tomcat-9.0.97/webapps/'
+                sh 'mv /var/lib/jenkins/workspace/mypipilinefromscm/target/*.war  /opt/apache-tomcat-9.0.97/webapps/'
             }
            
         }
